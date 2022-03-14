@@ -7,7 +7,7 @@ app下载地址：商店搜索：看漫
 群1077223830
 *******************************
 [rewrite_local]
-^https?:\/\/api-cdn\.321mh\.com\/comic-api\/v2 url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/kmh.js
+^http[s]?:\/\/api-cdn\.321mh\.com\/comic-api\/v2 url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/kmh.js
 [mitm] 
 hostname = *.*.*
 
