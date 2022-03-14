@@ -1,8 +1,8 @@
-//重写链接：
-^http:\/\/app\.yd6666\.me url script-response-body 
-公众号：木木IOS分享 原十三座州府
 
-*******************************
+
+
+/*******************************
+  公众号：木木IOS分享 原十三座州府
 [rewrite_local]
 ^http:\/\/app\.yd6666\.me url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/ybd.js
 [mitm] 
