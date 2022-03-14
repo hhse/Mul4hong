@@ -12,5 +12,23 @@ app下载地址：商店搜索：看漫
 hostname = *.*.*
 
 *******************************/
+var body = $response.body;
+var url = $request.url;
+var obj = JSON.parse(body);
 
-var body=$response['body'];var url=$request['url'];var obj=JSON['parse'](body);const vip='/comic/getcomicmaindata';if(url['indexOf'](vip)!=-0x1){body=replace(/price":((\d)+)/ig,body,'price\x22:0');body=replace(/isbuy":((\d)+)/ig,body,'isbuy\x22:0');}function replace(_0x1dc1fd,_0x1a2e05,_0x41aa7e){return _0x1a2e05['replace'](_0x1dc1fd,function(_0xb8120e){return _0x41aa7e;});}$done({'body':body});
+const vip = '/comic/getcomicmaindata';
+
+
+if (url.indexOf(vip) != -1) {
+    body = replace(/price":((\d)+)/ig, body, 'price":0');
+    body = replace(/isbuy":((\d)+)/ig, body, 'isbuy":0');
+}
+
+function replace(reg, str, value) {
+    return str.replace(reg, function (word) {
+            return value;
+        }
+    );
+}
+
+$done({body});
