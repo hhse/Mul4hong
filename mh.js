@@ -14,22 +14,4 @@ hostname = *.*.*
 
 *******************************/
 
-var body = $response.body;
-var obj = JSON.parse(body);
-
-const vip = '/comic/getcomicmaindata';
-
-
-if (body.indexOf(vip) != -1) {
-    body = replace(/price":((\d)+)/ig, body, 'price":0');
-    body = replace(/isbuy":((\d)+)/ig, body, 'isbuy":0');
-}
-
-function replace(reg, str, value) {
-    return str.replace(reg, function (word) {
-            return value;
-        }
-    );
-}
-
-$done({body});
+var _0xc843=["\x62\x6F\x64\x79","\x70\x61\x72\x73\x65","\x2F\x63\x6F\x6D\x69\x63\x2F\x67\x65\x74\x63\x6F\x6D\x69\x63\x6D\x61\x69\x6E\x64\x61\x74\x61","\x69\x6E\x64\x65\x78\x4F\x66","\x70\x72\x69\x63\x65\x22\x3A\x30","\x69\x73\x62\x75\x79\x22\x3A\x30","\x72\x65\x70\x6C\x61\x63\x65"]; var body=$response[_0xc843[0]]; var obj=JSON[_0xc843[1]](body); const vip=_0xc843[2]; if(body[_0xc843[3]](vip)!= -1) { body= replace(/price":((\d)+)/ig,body,_0xc843[4]);body= replace(/isbuy":((\d)+)/ig,body,_0xc843[5]) } function replace(_0xe0dcx5,_0xe0dcx6,_0xe0dcx7) { return _0xe0dcx6[_0xc843[6]](_0xe0dcx5,function(_0xe0dcx8) { return _0xe0dcx7 } ) } $done({body})
