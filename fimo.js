@@ -18,11 +18,11 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-const vip = '/fimo-common/film';
+const vip = '/fimo-common';
 
 
 if (url.indexOf(vip) != -1) {
-    body = replace(/isPurchase":((\d)+)/ig, body, 'isPurchase":0');
+    body = replace(/isPurchase":((\d))/ig, body, 'isPurchase":0');
 }
 
 function replace(reg, str, value) {
