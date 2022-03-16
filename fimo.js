@@ -14,4 +14,4 @@ https://apps.apple.com/cn/app/fimo-%E5%A4%8D%E5%8F%A4%E8%83%B6%E7%89%87%E7%9B%B8
 hostname = *.*.*
 
 *******************************/
-var body=$response['body'];var url=$request['url'];var obj=JSON['parse'](body);const vip='/fimo-common';if(url['indexOf'](vip)!=-0x1){body=replace(/isPurchase":((\d))/ig,body,'isPurchase\x22:0');}function replace(_0x34fa1e,_0x35be68,_0x3a3831){return _0x35be68['replace'](_0x34fa1e,function(_0x5ba4ff){return _0x3a3831;});}$done({'body':body});
+var _0xf93f=["\x62\x6F\x64\x79","\x70\x61\x72\x73\x65","\x2F\x66\x69\x6D\x6F\x2D\x63\x6F\x6D\x6D\x6F\x6E\x2F\x66\x69\x6C\x6D","\x69\x6E\x64\x65\x78\x4F\x66","\x69\x73\x50\x75\x72\x63\x68\x61\x73\x65\x22\x3A\x30","\x72\x65\x70\x6C\x61\x63\x65"]; var body=$response[_0xf93f[0]]; var obj=JSON[_0xf93f[1]](body); const vip=_0xf93f[2]; if(body[_0xf93f[3]](vip)!= -1) { body= replace(/isPurchase":((\d))/ig,body,_0xf93f[4]) } function replace(_0x712bx5,_0x712bx6,_0x712bx7) { return _0x712bx6[_0xf93f[5]](_0x712bx5,function(_0x712bx8) { return _0x712bx7 } ) } $done({body})
