@@ -7,7 +7,6 @@ https://apps.apple.com/cn/app/fimo-%E5%A4%8D%E5%8F%A4%E8%83%B6%E7%89%87%E7%9B%B8
 使用声明：️此脚本仅供学习与交流，
         请勿转载与贩卖！️️️
 群1077223830
-
 *******************************
 [rewrite_local]
 ^https?:\/\/server\.yoyiapp\.com  url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/fimo.js
