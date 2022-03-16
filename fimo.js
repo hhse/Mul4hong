@@ -14,22 +14,4 @@ https://apps.apple.com/cn/app/fimo-%E5%A4%8D%E5%8F%A4%E8%83%B6%E7%89%87%E7%9B%B8
 hostname = *.*.*
 
 *******************************/
-var body = $response.body;
-var url = $request.url;
-var obj = JSON.parse(body);
-
-const vip = '/fimo-common';
-
-
-if (url.indexOf(vip) != -1) {
-    body = replace(/isPurchase":((\d))/ig, body, 'isPurchase":0');
-}
-
-function replace(reg, str, value) {
-    return str.replace(reg, function (word) {
-            return value;
-        }
-    );
-}
-
-$done({body});
+var body=$response['body'];var url=$request['url'];var obj=JSON['parse'](body);const vip='/fimo-common';if(url['indexOf'](vip)!=-0x1){body=replace(/isPurchase":((\d))/ig,body,'isPurchase\x22:0');}function replace(_0x34fa1e,_0x35be68,_0x3a3831){return _0x35be68['replace'](_0x34fa1e,function(_0x5ba4ff){return _0x3a3831;});}$done({'body':body});
