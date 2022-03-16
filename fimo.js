@@ -14,5 +14,22 @@ https://apps.apple.com/cn/app/fimo-%E5%A4%8D%E5%8F%A4%E8%83%B6%E7%89%87%E7%9B%B8
 hostname = *.*.*
 
 *******************************/
+var body = $response.body;
+var url = $request.url;
+var obj = JSON.parse(body);
 
-var _0x2a6f=["\x62\x6F\x64\x79","\x70\x61\x72\x73\x65","\x2F\x66\x69\x6D\x6F\x2D\x63\x6F\x6D\x6D\x6F\x6E\x2F\x66\x69\x6C\x6D","\x69\x6E\x64\x65\x78\x4F\x66","\x69\x73\x50\x75\x72\x63\x68\x61\x73\x65\x22\x3A\x30","\x72\x65\x70\x6C\x61\x63\x65"]; var body=$response[_0x2a6f[0]]; var obj=JSON[_0x2a6f[1]](body); const vip=_0x2a6f[2]; if(body[_0x2a6f[3]](vip)!= -1) { body= replace(/isPurchase":((\d)+)/ig,body,_0x2a6f[4]) } function replace(_0x20d2x5,_0x20d2x6,_0x20d2x7) { return _0x20d2x6[_0x2a6f[5]](_0x20d2x5,function(_0x20d2x8) { return _0x20d2x7 } ) } $done({body})
+const vip = '/fimo-common/film';
+
+
+if (url.indexOf(vip) != -1) {
+    body = replace(/isPurchase":((\d)+)/ig, body, 'isPurchase":0');
+}
+
+function replace(reg, str, value) {
+    return str.replace(reg, function (word) {
+            return value;
+        }
+    );
+}
+
+$done({body});
