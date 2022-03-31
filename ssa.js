@@ -1,6 +1,7 @@
 /*[rewrite_local]
-^http[s]s:\/\/www\.ssalegs\.store url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/ssa.js
+^https:\/\/www\.ssalegs\.store url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/ssa.js
 [mitm] 
+
 hostname = www.ssalegs.store
 */
 var body = $response.body;
