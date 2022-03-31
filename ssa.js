@@ -1,5 +1,5 @@
 /*[rewrite_local]
-^https:\/\/www\.ssalegs\.store url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/ssa.js
+^https:\/\/www\.ssalegs\.store\/cms\/Appapi\/username\/username url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/ssa.js
 [mitm] 
 
 hostname = www.ssalegs.store
