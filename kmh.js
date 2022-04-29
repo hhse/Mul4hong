@@ -10,7 +10,7 @@ app下载地址：商店搜索：驾照一点通极速版
 [rewrite_local]
 ^https:\/\/comic\.321mh\.com\/v2  url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/kmh.js
 [mitm] 
-hostname = api-cdn.321mh.com
+hostname = comic.321mh.com
 
 *******************************/
 
