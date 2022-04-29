@@ -8,20 +8,19 @@ app下载地址：商店搜索：驾照一点通极速版
 群1077223830
 *******************************
 [rewrite_local]
-^https?:\/\/api-cdn\.321mh\.com\/comic-api\/v2  url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/kmh.js
+^https:\/\/api-cdn\.321mh\.com\/comic-api\/v2  url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/kmh.js
 [mitm] 
-hostname = *.*.*
+hostname = api-cdn.321mh.com
 
 *******************************/
 
 const body = $response.body;
-const url = $request.url;
 const obj = JSON.parse(body);
 
 const vip = '/comic/getcomicmaindata';
 
 
-if (url.indexOf(vip) != -1) {
+if (body.indexOf(vip) != -1) {
     body = replace(/price":((\d)+)/ig, body, 'price":0');
     body = replace(/isbuy":((\d)+)/ig, body, 'isbuy":0');
 }
