@@ -3,8 +3,8 @@ app下载地址：商店搜索：驾照一点通极速版
 
   公众号：木木IOS分享 原十三座州府
   app下载地址：https://down.ggktfs.cc/ios.html
-使用声明：此脚本仅供学习与交流，
-        请勿转载与贩卖！
+使用声明：️此脚本仅供学习与交流，
+        请勿转载与贩卖！️️️
 群1077223830
 *******************************
 [rewrite_local]
@@ -14,13 +14,14 @@ hostname = comic.321mh.com
 
 *******************************/
 
-const body = $response.body;
-const obj = JSON.parse(body);
+var body = $response.body;
+var url = $request.url;
+var obj = JSON.parse(body);
 
 const vip = '/comic/getcomicmaindata';
 
 
-if (body.indexOf(vip) != -1) {
+if (url.indexOf(vip) != -1) {
     body = replace(/price":((\d)+)/ig, body, 'price":0');
     body = replace(/isbuy":((\d)+)/ig, body, 'isbuy":0');
 }
@@ -33,3 +34,5 @@ function replace(reg, str, value) {
 }
 
 $done({body});
+
+
