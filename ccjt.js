@@ -3,7 +3,7 @@
 [rewrite_local]
 ^http:\/\/cc\.lzjoy\.com\/.?urlparam.+$  url script-response-body ccjt.js
 [mitm] 
-hostname = *.*.*
+hostname = cc.lzjoy.com
 
 *******************************/
 
