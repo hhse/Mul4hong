@@ -1,7 +1,7 @@
 /*
 app下载地址：商店搜索：❤️证件
 [rewrite_local]
-^https:\/\/zhengjian\.flyingeffect\.com\/api\/ url script-response-body azj.js
+^https:\/\/zhengjian\.flyingeffect\.com\/api\/ url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/azj.js
 [mitm] 
 hostname = zhengjian.flyingeffect.com
 公众号：木木IOS分享 原十三座州府
