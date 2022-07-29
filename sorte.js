@@ -21,13 +21,6 @@ const vip = '/verify';
 
 if (url.indexOf(vip) != -1) {
     obj.isPro = true;
+ body = JSON.stringify(obj);
 }
-
-function replace(reg, str, value) {
-    return str.replace(reg, function (word) {
-            return value;
-        }
-    );
-}
-
 $done({body});
