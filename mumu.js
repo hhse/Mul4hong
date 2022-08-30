@@ -1,5 +1,5 @@
 
-/*木木大帅
+/*
 
 [rewrite_local]
 ^https:\/\/uu\.tuanyougou\.com\/\/video url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/mumu.js
