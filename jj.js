@@ -10,12 +10,13 @@ hostname = *.*.*
 
 
 var body = $response.body;
+var url = $request.url;
 var obj = JSON.parse(body);
 
 const vip = '/fimo-common/film';
 
 
-if (body.indexOf(vip) != -1) {
+if (url.indexOf(vip) != -1) {
     body = replace(/isPurchase":((\d)+)/ig, body, 'isPurchase":0');
 }
 
