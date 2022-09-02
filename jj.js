@@ -1,6 +1,6 @@
 
 // [rewrite_local]
-// ^https?:\/\/server\.yoyiapp\.com  url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/fimo.js
+// ^https?:\/\/server\.yoyiapp\.com  url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/jj.js
 // [mitm] 
 // hostname = *.*.*
 
