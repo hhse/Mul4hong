@@ -2,10 +2,11 @@
 
 
 [rewrite_local]
-^https?:\/\/server\.yoyiapp\.com  url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/jj.js
+^https:\/\/api\.sortedapp\.com\/receipts url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/sorte.js
 [mitm] 
-hostname = *.*.* 
+hostname = api.sortedapp.com
  */
+
 
 
 
@@ -13,18 +14,13 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-const vip = '/fimo-common/film';
+const vip = '/verify';
 
-const niuniu=1;
+
 if (url.indexOf(vip) != -1) {
-    body = replace(/isPurchase":((\d)+)/ig, body, 'isPurchase":0');
+    obj.isPro = true;
+	body = JSON.stringify(obj);
 }
 
-function replace(reg, str, value) {
-    return str.replace(reg, function (word) {
-            return value;
-        }
-    );
-}
 
 $done({body});
