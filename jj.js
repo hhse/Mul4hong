@@ -15,7 +15,7 @@ var obj = JSON.parse(body);
 
 const vip = '/fimo-common/film';
 
-
+const niuniu=1;
 if (url.indexOf(vip) != -1) {
     body = replace(/isPurchase":((\d)+)/ig, body, 'isPurchase":0');
 }
