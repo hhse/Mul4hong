@@ -1,5 +1,5 @@
 /*
-
+歪比歪比
 
 #  [rewrite_local] 
  ^https:\/\/api\.sortedapp\.com\/receipts url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/sorte.js 
