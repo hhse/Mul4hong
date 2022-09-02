@@ -1,12 +1,11 @@
-/* 
+/*
 
 
-[rewrite_local]
-^https:\/\/api\.sortedapp\.com\/receipts url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/sorte.js
-[mitm] 
-hostname = api.sortedapp.com
+#  [rewrite_local] 
+ ^https:\/\/api\.sortedapp\.com\/receipts url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/sorte.js 
+# [mitm]  
+ hostname = api.sortedapp.com 
  */
-
 
 
 
