@@ -10,7 +10,7 @@ https:\/\/api4\.bybutter\.com\/v4\/* url script-response-body https://raw.github
 
 Surge4:
 [Script]
-http-response https:\/\/api4\.bybutter\.com\/v4\/* requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hyxj.js
+http-response https:\/\/api4\.bybutter\.com\/v4\/* requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/hhse/Mul4hong/master/hyxj.js
 
 [MITM]
 hostname = %APPEND% api4.bybutter.com
