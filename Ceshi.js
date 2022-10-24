@@ -10,15 +10,15 @@
 [rewrite_local]
 ^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/Ceshi.js
 [mitm] 
-hostname = *.uu.*
+hostname = *.tuanyougou.*
 *******************************
 Surge
 
 [Script]
-^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$  requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/hhse/Mul4hong/master/Ceshi.js
+^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/hhse/Mul4hong/master/Ceshi.js
 
 [MITM]
-hostname = *.uu.*
+hostname = *.tuanyougou.*
 
 *******************************/
 var obj = JSON.parse($response.body);
