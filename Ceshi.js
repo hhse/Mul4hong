@@ -8,13 +8,20 @@
 群1077223830
 *******************************
 [rewrite_local]
-^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/Ceshi.js
+^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body uu.js
 [mitm] 
-hostname = *.tuanyougou.*
+hostname = *.uu.*
+*******************************
+Surge
+
+[Script]
+^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$  requires-body=1,max-size=0,script-path= uu.js
+
+[MITM]
+hostname = *.uu.*
 
 *******************************/
 var obj = JSON.parse($response.body);
-    obj.data.userId = 9999;
-obj.data.endTime = "脚本成功啦";
-obj.data.vip \d+ = 1;
+    obj.userId = 9999;
+obj.endTime = "脚本成功啦";
     $done({body: JSON.stringify(obj)});
