@@ -8,14 +8,14 @@
 群1077223830
 *******************************
 [rewrite_local]
-^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body uu.js
+^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$ url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/Ceshi.js
 [mitm] 
 hostname = *.uu.*
 *******************************
 Surge
 
 [Script]
-^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$  requires-body=1,max-size=0,script-path= uu.js
+^http[s]?:\/\/uu.tuanyougou.com\/\/video\/registryUser.+$  requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/hhse/Mul4hong/master/Ceshi.js
 
 [MITM]
 hostname = *.uu.*
