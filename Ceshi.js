@@ -22,6 +22,6 @@ hostname = *.tuanyougou.*
 
 *******************************/
 var obj = JSON.parse($response.body);
-    obj.userId = 9999;
-obj.endTime = "脚本成功啦";
+    obj.data.userId = 9999;
+obj.data.endTime = "脚本成功啦";
     $done({body: JSON.stringify(obj)});
