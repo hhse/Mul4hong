@@ -9,3 +9,14 @@
 
 [rewrite_local]
 ^https?:\/\/server\.yoyiapp\.com\/fimo-common\/film*? url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/Fimm.js
+
+
+[mitm]
+hostname = server.yoyiapp.com
+
+*******************************/
+var body=$response.body;
+body = body.replace(/isPurchase\":\d+/g,'isPurchase":0');
+body = body.replace(/price\": "\d+"/g,'price": "0"');
+body = body.replace(/special\":".*?\"/g,'special":""');
+$done(body);
