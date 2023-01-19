@@ -8,7 +8,7 @@
 *******************************
 
 [rewrite_local]
-^https?:\/\/server\.yoyiapp\.com\/fimo-common\/film*? url script-response-body Fimm.js
+^https?:\/\/server\.yoyiapp\.com\/fimo-common\/film*? url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/Fimm.js
 
 
 [mitm]
