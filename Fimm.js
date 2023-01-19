@@ -17,6 +17,6 @@ hostname = server.yoyiapp.com
 *******************************/
 var body=$response.body;
 body = body.replace(/isPurchase\":\d+/g,'isPurchase":0');
-body = body.replace(/price\": "\d+"/g,'price": "0"');
+body = body.replace(/price\":"\d+"/g,'price":"0"');
 body = body.replace(/special\":".*?\"/g,'special":""');
 $done(body);
